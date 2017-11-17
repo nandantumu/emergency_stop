@@ -34,6 +34,7 @@ def drive_callback(data, state):
     else:
         velocity = 0
         angle = 0
+        print("Emergency Stop Activated")
     print("Velocity: ", velocity, "Angle: ", angle)
     # Do the computation
     pwm1 = arduino_map(velocity, -100, 100, 6554, 13108);
